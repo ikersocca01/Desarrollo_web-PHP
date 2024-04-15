@@ -14,17 +14,17 @@
     switch($opcion){
         case "nombre":
             $nombre = $_POST['nombre'];
-            $result = mysqli_query($link, "Select *usuario where nombre='$nombre'");
+            $result = mysqli_query($link, "Select *from usuario where nombre='$nombre'");
             break;
         
-            case "apellidos":
+        case "apellidos":
                 $dni = $_POST['apellidos'];
-                $result = mysqli_query($link, "Select *usuario where apellidos='$apellidos'");
+                $result = mysqli_query($link, "Select *from usuario where apellidos='$apellidos'");
                 break;
 
-                case "dni":
+        case "dni":
                     $dni = $_POST['dni'];
-                    $result = mysqli_query($link, "Select *usuario where dni='$dni'");
+                    $result = mysqli_query($link, "Select *from usuario where dni='$dni'");
                     break;
 
     }
